@@ -13,9 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <title>Delivery</title>
 </head>
@@ -49,12 +50,12 @@
     <!-- Inicio cuerpo de pagina -->
     <main>
         <!-- Titulo principal -->
-        <div class="centrado-h1">
+        <div class="centrado-h1 wow animate__animated animate__slideInRight animate__delay-0.8s">
             <h1 class="centrado-titulos">¿Dónde llegamos?</h1>
             <hr width="10%" align="center" style="margin: auto;">
         </div>
         <!-- Bloque contenido -->
-        <div id="bloque-1" class="contenedor-flex-col">
+        <div id="bloque-1" class="contenedor-flex-col wow animate__animated animate__lightSpeedInRight animate__delay-1s">
             <div class="img-max-size">
                 <img src="images/mapa2.png" alt="Mapa" class="img-fluid rounded img-opacity img-max-size">
             </div>
@@ -83,5 +84,7 @@
     </footer>
     <!-- Fin Pie de Pagina -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>
