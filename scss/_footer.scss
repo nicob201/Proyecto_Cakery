@@ -1,0 +1,56 @@
+@import "variables";
+.pie-de-pagina {
+    padding: 40px 0;
+    font-family: $fontHeader;
+}
+.pie-de-pagina .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: $colorFont;
+}
+.pie-de-pagina .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: .75;
+}
+.pie-de-pagina .social a:hover {
+    opacity: .9;
+}
+.pie-de-pagina ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.pie-de-pagina .lista-footer li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: .8;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.pie-de-pagina .lista-footer li {
+    display: inline-block;
+    padding: 0 15px;
+    font-family: $fontHeader;
+}
+.pie-de-pagina ul li a:hover {
+    opacity: 1;
+}
+.pie-de-pagina .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: $colorFont;
+}

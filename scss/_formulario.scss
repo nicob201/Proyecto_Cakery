@@ -1,0 +1,67 @@
+@import "variables";
+.container-formulario {
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+}
+#contact {
+	background: $back-formulario;
+	padding: 25px;
+	margin: 2rem 0;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	input {
+	  &[type="text"], &[type="email"], &[type="tel"], &[type="url"] {
+		font: 400 12px/16px $fontMontserrat;
+		width: 100%;
+		border: 1px solid $borde-formulario;
+		background: $color5;
+		margin: 0 0 5px;
+		padding: 10px;
+		&:hover {
+		  -webkit-transition: border-color 0.3s ease-in-out;
+		  -moz-transition: border-color 0.3s ease-in-out;
+		  transition: border-color 0.3s ease-in-out;
+		  border: 1px solid #aaa;
+		}
+	  }
+	}
+	textarea {
+	  font: 400 12px/16px $fontMontserrat;
+	  width: 100%;
+	  border: 1px solid $borde-formulario;
+	  background: $color5;
+	  margin: 0 0 5px;
+	  padding: 10px;
+	  height: 100px;
+	  max-width: 100%;
+	  resize: none;
+	  &:hover {
+		-webkit-transition: border-color 0.3s ease-in-out;
+		-moz-transition: border-color 0.3s ease-in-out;
+		transition: border-color 0.3s ease-in-out;
+		border: 1px solid #aaa;
+	  }
+	}
+	button[type="submit"] {
+	  font: 400 12px/16px $fontMontserrat;
+	}
+	h3 {
+	  display: block;
+	  font-size: 30px;
+	  font-weight: 300;
+	  margin-bottom: 10px;
+	}
+	h4 {
+	  margin: 5px 0 15px;
+	  display: block;
+	  font-size: 13px;
+	  font-weight: 400;
+	}
+}
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
