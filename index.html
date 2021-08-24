@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -51,7 +52,7 @@
         <div id="controles" class="carousel slide max-width" data-bs-ride="carousel">
             <!-- Titulo principal -->
             <div class="header-box">
-                <h1>¡Bienvenidos a Cakery!</h1>
+                <h1 class="wow animate__bounceInRight">¡Bienvenidos a Cakery!</h1>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -80,10 +81,10 @@
         <!-- Inicio bloque 1 -->
         <section class="color-fondo">
             <div id="bloque-1" class="contenedor-flex max-width">
-                <div class="img-max-size w-50">
+                <div class="img-max-size">
                     <img src="images/image40.jpg" alt="Mix de cereales" class="img-fluid rounded img-opacity">
                 </div>
-                <div class="centrado-texto w-50">
+                <div class="centrado-texto">
                     <h2>¡Mira nuestros productos!</h2>
                     <a href="nosotros.html#productos"><input type="button" value="Ver productos" class="boton"></a>
                 </div>
@@ -157,5 +158,7 @@
     </footer>
     <!-- Fin Pie de Pagina -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>
