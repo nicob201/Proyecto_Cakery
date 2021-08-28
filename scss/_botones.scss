@@ -1,29 +1,33 @@
 @import "variables";
 @mixin boton-formato {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: $fontMontserrat;
-    padding: 10px 30px;
-	border-radius: 200px;
-    border:2px solid $color3;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: $fontMontserrat;
+  padding: 10px 30px;
+  border-radius: 200px;
+  border: 2px solid $color3;
 }
+
 .boton {
-    @include boton-formato();
+  @include boton-formato();
 }
-.boton:hover,
-.boton:active {
-	background-color:$color3;
-	color:$color1;
+
+.boton:active,
+.boton:hover {
+  background-color: $color3;
+  color: $color1;
 }
 // Inicio Modal //
+
 .boton-modal {
-    @include boton-formato();
-    padding: 8px 28px;
-    color: $colorFont;
-    background-color: $color1;
+  @include boton-formato();
+  padding: 8px 28px;
+  color: $colorFont;
+  background-color: $color1;
 }
+
 .link-modal {
-    color: $colorFont;
-    font-family: $fontMontserrat;
+  color: $colorFont;
+  font-family: $fontMontserrat;
 }
 // Fin Modal //

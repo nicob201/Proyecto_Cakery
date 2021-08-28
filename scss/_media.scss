@@ -1,50 +1,58 @@
 // Inicio Menu de navegacion //
 @media (max-width: 991px) {
-    .nav-toggler {
-      display: flex;
-      align-self: center;
-    }
-    .header {
-      .nav {
-        position: absolute;
-        left: 0;
-        top: 100%;
-        width: 100%;
-        background-color: $color4;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        opacity: 0;
-        visibility: hidden;
-        justify-content: center;
-        ul {
-          padding: 0;
-          text-align: center;
-        }
-        ul li {
-          display: block;
-          margin: 0;
-        }
+  .nav-toggler {
+    display: flex;
+    align-self: center;
+  }
+
+  .header {
+    .nav {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      background-color: $color4;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      opacity: 0;
+      visibility: hidden;
+      justify-content: center;
+
+      ul {
+        padding: 0;
+        text-align: center;
       }
-      #nav-check {
-        &:checked ~ .nav {
-          opacity: 1;
-          visibility: visible;
-        }
-        &:focus ~ .nav-toggler {
-          box-shadow: 0 0 15px #000000;
-        }
-        &:checked ~ .nav-toggler span {
-          background-color: transparent;
-          &::before {
-            top: 0;
-            transform: rotate(45deg);
-          }
-          &::after {
-            top: 0;
-            transform: rotate(-45deg);
-          }
-        }
+
+      ul li {
+        display: block;
+        margin: 0;
       }
     }
+
+    #nav-check {
+      &:checked ~ .nav {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &:focus ~ .nav-toggler {
+        box-shadow: 0 0 15px #000000;
+      }
+
+      &:checked ~ .nav-toggler span {
+        background-color: transparent;
+
+        &::before {
+          top: 0;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
 }
 // Fin Menu navegacion //
 // Posicionamiento //
@@ -52,85 +60,110 @@
   body {
     font-size: 1.3rem;
   }
+
   .carousel {
     max-height: 100vh;
   }
-  #bloque-1, .contenedor-flex {
+
+  #bloque-1,
+  .contenedor-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
   }
-  #bloque-2, .contenedor-flex {
+
+  #bloque-2,
+  .contenedor-flex {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding: 1rem;
   }
+
   #bloque-nosotros div img {
     padding: 1rem;
   }
-  #bloque-promo, .contenedor-flex {
+
+  #bloque-promo,
+  .contenedor-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
-
   }
+
   .centrado-texto {
     text-align: center;
     padding: 1rem;
   }
+
   .centrado-parrafos {
     text-align: left;
     padding: 1rem;
   }
+
   .centrado-titulos {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
-  #bloque-email, .contenedor-flex-col {
+
+  #bloque-email,
+  .contenedor-flex-col {
     padding: 1rem;
     align-items: center;
     justify-content: center;
   }
+
   .pie-de-pagina {
     padding: 40px 0;
   }
+
   .pie-de-pagina .social {
     padding-bottom: 5px;
   }
+
   .img-promo {
     max-width: 100%;
     max-height: 100%;
   }
+
   .lista-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .lista-footer li {
     margin-bottom: 5px;
   }
-  #bloque-contacto, .contenedor-flex-2 {
+
+  #bloque-contacto,
+  .contenedor-flex-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
     padding: 0;
   }
-  #bloque-contacto, .img-max-size {
+
+  #bloque-contacto,
+  .img-max-size {
     max-width: 100%;
     max-height: 100%;
   }
-  #bloque-contacto, .centrado-parrafos {
+
+  #bloque-contacto,
+  .centrado-parrafos {
     text-align: left;
     padding: 1rem;
   }
-  #formulario, #contact, .container-formulario {
+
+  #contact,
+  #formulario,
+  .container-formulario {
     width: 100%;
     margin: 1rem auto;
   }
@@ -140,21 +173,23 @@
     font-family: $fontMontserrat;
     padding: 5px 15px;
     border-radius: 100px;
-    border:2px solid $color3;
+    border: 2px solid $color3;
     font-size: 0.7rem;
   }
+
   .boton {
     @include boton-formato();
   }
-  .boton:hover,
-  .boton:active {
-	background-color:$color3;
-	color:$color1;
+
+  .boton:active,
+  .boton:hover {
+    background-color: $color3;
+    color: $color1;
   }
 }
 @media screen and (max-width: 1023px) {
-    .wow{
-        animation-name: none !important;
-        visibility: visible !important;
-    }
+  .wow {
+    animation-name: none !important;
+    visibility: visible !important;
+  }
 }
