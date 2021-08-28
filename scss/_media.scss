@@ -97,7 +97,7 @@
     justify-content: center;
   }
   .pie-de-pagina {
-    padding: 10px 0;
+    padding: 40px 0;
   }
   .pie-de-pagina .social {
     padding-bottom: 5px;
@@ -132,7 +132,7 @@
   }
   #formulario, #contact, .container-formulario {
     width: 100%;
-    margin: 1rem 0;
+    margin: 1rem auto;
   }
   @mixin boton-formato {
     font-weight: 600;
@@ -152,7 +152,7 @@
 	color:$color1;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1023px) {
     .wow{
         animation-name: none !important;
         visibility: visible !important;

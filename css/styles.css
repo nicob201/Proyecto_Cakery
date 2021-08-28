@@ -206,7 +206,7 @@ h1, h2 {
 
 .centrado-h1 {
   text-align: center;
-  margin-top: 85px; }
+  margin-top: 8rem; }
 
 .centrado-parrafos {
   text-align: left;
@@ -421,7 +421,7 @@ fieldset {
     align-items: center;
     justify-content: center; }
   .pie-de-pagina {
-    padding: 10px 0; }
+    padding: 40px 0; }
   .pie-de-pagina .social {
     padding-bottom: 5px; }
   .img-promo {
@@ -448,7 +448,7 @@ fieldset {
     padding: 1rem; }
   #formulario, #contact, .container-formulario {
     width: 100%;
-    margin: 1rem 0; }
+    margin: 1rem auto; }
   .boton {
     font-weight: 600;
     text-transform: uppercase;
@@ -462,7 +462,7 @@ fieldset {
     background-color: #f1abc4;
     color: #faf5ee; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1023px) {
   .wow {
     animation-name: none !important;
     visibility: visible !important; } }
