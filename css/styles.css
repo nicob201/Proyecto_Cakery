@@ -461,3 +461,8 @@ fieldset {
   .boton:active {
     background-color: #f1abc4;
     color: #faf5ee; } }
+
+@media screen and (max-width: 800px) {
+  .wow {
+    animation-name: none !important;
+    visibility: visible !important; } }
