@@ -9,7 +9,9 @@
 }
 
 .img-carousel {
-  width: 100vw;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
   filter: brightness(60%);
 }
 
